@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+
+    <title>BlueZone</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/cronometro.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body>
+    <div class="menu">
+      <div class="icon-close">
+        <img src="img/close.png">
+      </div>
+
+      <ul>
+        <li><a href="html/bagaca.html">Perfil</a></li>
+        <li><a href="html/bagaca.html">Sobre</a></li>
+        <li><a href="html/bagaca.html">Sair</a></li>
+        <li><a href="#">Modo Desenvolvedor</a>
+          <ul>
+              <li><a href="#">Cronômetro</a>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">
+                    <input type="button" id="inicio"
+                      value="Start" onclick="inicio();">
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <input type="button" id="parar"
+                      value="Stop" onclick="parar();" disabled>
+                  </button>
+                  <br/>
+                  <button type="button" class="btn btn-default">
+                    <input type="button" id="continuar"
+                      value="Resume" onclick="inicio();" disabled>
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <input type="button" id="reinicio"
+                      value="Reset" onclick="reinicio();" disabled>
+                  </button>
+                </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="jumbotron text-center">
+      <div align="left" valign="top">
+        <i class="icon-menu"><img src="img/menu.svg" /></i>
+      </div>
+      <h1>Você está na Área Azul!</h1>
+      <div id="contenedor">
+		      <div class="reloj" id="Horas">00</div>
+		        <div class="reloj" id="Minutos">:00</div>
+    	      <div class="reloj" id="Segundos">:00</div>
+		        <div class="reloj" id="Centesimas">:00</div>
+      </div>
+      <p><b>Seu cronômetro está ativado.</br></p>
+    </div>
+
+
+    <a href="html/relatorios.html" class="btn btn-block btn-lg btn-default">
+      <span class="glyphicon glyphicon-list-alt"></span>
+      Relatórios
+    </a>
+    <a href="#" class="btn btn-block btn-lg btn-default">
+      <span class="glyphicon glyphicon-map-marker"></span>
+      Mapa
+    </a>
+
+
+    <!--
+    <div class="container">
+      <table align="center" class="table text-center">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Data</th>
+            <th>Endereço</th>
+            <th>Horário de entrada</th>
+            <th>Horário de saída</th>
+            <th>Tempo total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>27/09/2016</td>
+            <td>Rua ABC, [bairro], [cidade]-MG</td>
+            <td>11:02:00 - 27/09/2016</td>
+            <td>11:20:11 - 27/09/2016</td>
+            <td>18 minutos e 11 segundos</td>
+          </tr>
+          <tr>
+            <td>25/09/2016</td>
+            <td>Rua ABC, [bairro], [cidade]-MG</td>
+            <td>14:25:30 - 25/09/2016</td>
+            <td>17:31:42 - 25/09/2016</td>
+            <td>2 horas, 6 minutos e 12 segundos</td>
+          </tr>
+          <tr>
+            <td>05/09/2016</td>
+            <td>Rua DEF, [bairro], [cidade]-SP</td>
+            <td>15:19:21 - 05/09/2016</td>
+            <td>16:31:11 - 05/09/2016</td>
+            <td>1 hora, 12 minutos e 10 segundos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    !-->
+
+  </body>
+</html>
